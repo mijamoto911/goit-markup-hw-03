@@ -25,28 +25,50 @@ body {
   color: var(--black);
   background: var(--white);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 a {
   color: currentColor;
   text-decoration: none;
 }
+img {
+  display: block;
+}
 address {
   font-style: normal;
 }
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 0;
+}
 
-.header * {
-  display: flex;
+.header {
+  /* display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
-  gap: 0px;
+  gap: 0px; */
 }
 .box-header {
   padding-top: 24px;
   padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
 }
 .visually-hidden {
   position: absolute;
@@ -72,12 +94,9 @@ button {
 
   cursor: pointer;
 }
-.container {
-  max-width: 1128px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+
 .nav {
+  display: flex;
 }
 .nav-logo {
   padding-right: 76px;
@@ -126,6 +145,8 @@ button {
 .nav-list .nav-link:active {
   color: var(--ocean);
 }
+.address {
+}
 
 .address-list {
   display: flex;
@@ -135,15 +156,26 @@ button {
 .main-section-title {
   background: var(--navy-blue);
 }
+
+.main-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 188px;
+}
+
 .main-title {
-  margin: 0;
   font-weight: 700;
   font-size: 56px;
   line-height: 107%;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--white);
+  padding-top: 188px;
+  padding-bottom: 48px;
 }
+
 .main-button {
   padding: 16px 32px;
   color: var(--white);
@@ -159,7 +191,11 @@ button {
   align-items: center;
   justify-content: center;
   gap: 24px;
-  padding: 120px 156px;
+  padding-top: 152px;
+  padding-bottom: 120px;
+}
+.strategy-title {
+  padding-bottom: 8px;
 }
 
 .promo-section-title {
@@ -276,8 +312,6 @@ button {
   padding-top: 96px;
   padding-bottom: 72px;
 }
-.btn-item {
-}
 
 .port-list {
   display: flex;
@@ -313,7 +347,6 @@ button {
   font-weight: 400;
   font-size: 16px;
   padding-left: 16px;
-
   line-height: 24px;
   line-height: 1.5;
   letter-spacing: 0.02em;
