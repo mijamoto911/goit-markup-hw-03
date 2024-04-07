@@ -256,7 +256,6 @@ button {
   color: var(--navy-blue);
 }
 .team-description {
-  margin-bottom: 32px;
   text-align: center;
   font-size: 16px;
   line-height: 24px;
@@ -344,7 +343,6 @@ button {
   color: var(--navy-blue);
 }
 .port-description {
-  margin-bottom: 32px;
   font-weight: 400;
   font-size: 16px;
   padding-left: 16px;
