@@ -158,14 +158,14 @@ button {
 }
 
 .main-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: block;
+  text-align: center;
   padding-bottom: 188px;
 }
 
 .main-title {
+  max-width: 496px;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 56px;
   line-height: 107%;
