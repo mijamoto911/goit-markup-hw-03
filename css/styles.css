@@ -62,7 +62,10 @@ address {
   padding: 0 15px;
 }
 
-.header {
+.portfolio {
+  border-bottom: 1px solid #e7e9fc;
+  width: 1440px;
+  height: 72px;
 }
 .box-header {
   padding-top: 24px;
@@ -91,7 +94,7 @@ button {
   border-radius: 4px;
   letter-spacing: 0.04em;
   text-align: center;
-
+  border: none;
   cursor: pointer;
 }
 .header .container {
@@ -102,15 +105,12 @@ button {
 .header-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
   flex-grow: 1;
-  margin-right: 332px;
 }
 
 .nav-logo {
-  display: flex;
-  align-items: center;
-  padding-right: 76px;
+  margin-right: 76px;
   font-family: var(--second-family);
   font-weight: 800;
   font-size: 18px;
@@ -135,15 +135,21 @@ button {
   display: flex;
   gap: 40px;
 }
+.address-item {
+}
 
 .contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: var(--slate);
 }
-.contacts:hover {
+.contacts:hover,
+.contacts:focus {
   color: var(--ocean);
 }
 
@@ -162,15 +168,20 @@ button {
   gap: 40px;
   align-items: center;
 }
+.main .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
 .main-section-title {
   background: var(--navy-blue);
+  padding-bottom: 188px;
 }
 
 .main-page {
   display: block;
   text-align: center;
-  padding-bottom: 188px;
 }
 
 .main-title {
@@ -183,7 +194,7 @@ button {
   text-align: center;
   color: var(--white);
   padding-top: 188px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .main-button {
@@ -192,14 +203,16 @@ button {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: var(--iris);
 }
-
+.main-button:hover,
+main-button:focus {
+  background: var(--ocean);
+}
 .strategy-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding-top: 152px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 .strategy-item {
   width: calc((100% - var(--indent-col) * (var(--items) - 1)) / var(--items));
@@ -207,12 +220,19 @@ button {
 .strategy-title {
   padding-bottom: 8px;
 }
+.strategy-text {
+  line-height: 1.5;
+}
+
+.promo {
+  padding-bottom: 120px;
+}
 
 .promo-section-title {
   font-weight: 700;
   font-size: 36px;
 
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   line-height: 40px;
   line-height: 1.11111;
   letter-spacing: 0.02em;
@@ -225,7 +245,6 @@ button {
   align-items: center;
   justify-content: center;
   gap: 24px;
-  padding-bottom: 120px;
 }
 .promo-item {
   width: calc((100% - var(--indent-col) * (var(--items) - 1)) / var(--items));
@@ -234,12 +253,12 @@ button {
 
 .team {
   background: var(--cloud);
+  padding: 120px 0;
 }
 .team-section {
 }
 .team-section-title {
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
@@ -254,21 +273,21 @@ button {
   align-items: center;
   justify-content: center;
   gap: 24px;
-  padding-bottom: 120px;
+
   margin: 0;
 }
 .team-item {
   width: calc((100% - var(--indent-col) * (var(--items) - 1)) / var(--items));
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
+
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: var(--white);
 }
 .team-img {
-  margin-bottom: 32px;
 }
 .team-wrapper {
+  padding: 32px 0;
 }
 .team-cards {
   padding-bottom: 8px;
@@ -289,6 +308,8 @@ button {
 }
 .footer {
   background-color: var(--navy-blue);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -310,9 +331,8 @@ button {
   letter-spacing: 0.02em;
   color: var(--white);
 }
-.box-footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.main-section-port {
+  padding: 96px 0 120px;
 }
 .port-btn {
   color: var(--iris);
@@ -330,15 +350,14 @@ button {
   align-items: center;
   justify-content: center;
   gap: 24px;
-  padding-top: 96px;
-  padding-bottom: 72px;
+
+  margin-bottom: 72px;
 }
 
 .port-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  padding-bottom: 120px;
+  gap: 48px 24px;
 }
 
 .port-item {
@@ -346,27 +365,18 @@ button {
   --items: 3;
 }
 .port-wrapper {
-}
-.list-port {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  padding-bottom: 120px;
-  margin: 0;
-}
-.port-item {
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
-  width: 360px;
-  height: 420px;
+}
+
+.port-item {
 }
 
 .port-cards {
-  margin-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
-  padding-left: 16px;
+
   line-height: 24px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -375,7 +385,7 @@ button {
 .port-description {
   font-weight: 400;
   font-size: 16px;
-  padding-left: 16px;
+
   line-height: 24px;
   line-height: 1.5;
   letter-spacing: 0.02em;
