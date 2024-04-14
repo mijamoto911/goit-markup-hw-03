@@ -64,15 +64,8 @@ address {
 
 .portfolio {
   border-bottom: 1px solid #e7e9fc;
-  width: 1440px;
-  height: 72px;
 }
-.box-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  display: flex;
-  justify-content: space-between;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
