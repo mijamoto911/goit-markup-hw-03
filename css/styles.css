@@ -170,6 +170,7 @@ button {
 .main-section-title {
   background: var(--navy-blue);
   padding-bottom: 188px;
+  padding-top: 188px;
 }
 
 .main-page {
@@ -186,7 +187,6 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--white);
-  padding-top: 188px;
   margin-bottom: 48px;
 }
 
@@ -200,12 +200,14 @@ button {
 main-button:focus {
   background: var(--ocean);
 }
+.strategy {
+  padding: 120px 0;
+}
 .strategy-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  padding: 120px 0;
 }
 .strategy-item {
   width: calc((100% - var(--indent-col) * (var(--items) - 1)) / var(--items));
@@ -283,7 +285,7 @@ main-button:focus {
   padding: 32px 0;
 }
 .team-cards {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   text-align: center;
   font-size: 20px;
   line-height: 24px;
